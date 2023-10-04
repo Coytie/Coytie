@@ -1,0 +1,11 @@
+See Who is Online - GP:
+select * from DYNAMICS..ACTIVITY
+select * from tempdb..DEX_LOCK
+select * from tempdb..DEX_SESSION
+
+
+Get Users and Permissions for Nav/GP:
+Select [User].[User Name],[User].[State],[Access Control].[Role ID],[Access Control].[Company Name]
+From [User]
+INNER JOIN [Access Control]
+ON [User].[User Security ID]=[Access Control].[User Security ID]
